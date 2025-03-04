@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <windows.h>
 
 using namespace std;
 
@@ -19,24 +18,24 @@ public:
     Animal(const std::string& name, int x = 0, int y = 0, double direction = 0.0d, double speedMultiplier = 1.0d)
      : ID(nextID++), name(name), x(x), y(y), direction(direction), speedMultiplier(speedMultiplier)
     {
-        this->quantity++;
-        std::cout << "Animal object created. ID: " << getID();
-        std::cout << ", name: " << getName() << ". " << '\n';
+        Animal::quantity++;
+        std::cout << "Gyvūnas sukurtas. ID: " << getID();
+        std::cout << ", vardas: " << getName() << ". " << '\n';
     }
     ~Animal() {
-        this->quantity--;
-        std::cout << "Animal object with ID: " << getID();
-        cout << " has been destroyed. Left " << getQuantity() << " objects." << '\n';
+        Animal::quantity--;
+        std::cout << "Gyvūno objektas su ID: " << getID();
+        cout << " buvo sunaikintas. Liko " << getQuantity() << " objektų." << '\n';
     }
     void print() const
     {
         std::cout << "{\n\tCLASS={Animal}, \n\tID: " << ID;
-        std::cout << ", \n\tname: " << name;
+        std::cout << ", \n\tvardas: " << name;
         std::cout << ", \n\tx: " << x;
         std::cout << ", \n\ty: " << y;
-        std::cout << ", \n\tdirection = " << direction;
-        std::cout << ", \n\tquantity = " << quantity;
-        std::cout << ", \n\tspeed = " << getSpeed() << "\n}\n";
+        std::cout << ", \n\tkryptis: " << direction;
+        std::cout << ", \n\tkiekis: " << quantity;
+        std::cout << ", \n\tgreitis: " << getSpeed() << "\n}\n";
     }
     int getID() const { return ID; }
     int getX() const { return x; }
@@ -46,14 +45,28 @@ public:
     std::string getName() const { return name; }
     static int getQuantity() { return quantity; }
 
-    void setX(int value) { x = value; }
-    void setY(int value) { y = value; }
-    void setName(const std::string& value) { name = value; }
+    void setX(int value, bool print = true)
+    {
+        if(print) std::cout << "Gyvūno, vardu " << getName() << ", x reikšmė pakeista iš " << getX() << " į " << value << '\n';
+        x = value;
+    }
+    void setY(int value, bool print = true)
+    {
+        if(print) std::cout << "Gyvūno, vardu " << getName() << ", y reikšmė pakeista iš " << getY() << " į " << value << '\n';
+        y = value;
+    }
+    void setName(const std::string& value, bool print = true)
+    {
+        if(print) std::cout << "Gyvūno vardas pakeistas iš " << getName() << " į " << value << '\n';
+        name = value;
+    }
 
     void move(int dx, int dy)
     {
-        setX(getX() + dx);
-        setY(getY() + dy);
+        std::cout << "Gyvūnas, vardu " << name << ", juda iš (x: " << getX() << ", y: " << getY() << ") į ";
+        setX(getX() + dx, false);
+        setY(getY() + dy, false);
+        std::cout << "(x: " << getX() + dx << ", y: " << getY() << ").\n";
     }
 };
 
@@ -62,53 +75,58 @@ int Animal::nextID = 1;
 
 int main()
 {
-    SetConsoleOutputCP(65001);
-    Animal animal1("eitis", 0, 9, 0, 0.75d);
-    animal1.print();
-    Animal an2("Kostas", 9, 1551, 50, 0.5d);
-    an2.print();
-    animal1.print();
-    an2.setX(908);
-    an2.print();
+    Animal kiskis{"Kiškis", 0, 9, 0, 0.75d};
+    kiskis.print();
 
-    Animal* anis = new Animal("Milda", 9, 8, 270, 0.7d);
-    anis->print();
-    delete anis; //Butinas
+    Animal meska{"Meška", 9, 1551, 50, 0.5d};
+    meska.print();
+    meska.setX(908);
+    meska.setY(-17);
+    meska.setName("Meškinas");
+    meska.print();
 
-    Animal* darVienas = new Animal("haha");
-    darVienas->print();
-    delete darVienas;
+
+    Animal* vilkas = new Animal{"Vilkas", 9, 8, 270, 0.7d};
+    vilkas->print();
+    delete vilkas; //Butinas
 
 
     //statinis masyvas
-    cout << "Statinis masyvas." << '\n';
+    cout << "\n\nStatinis masyvas." << '\n';
     Animal* s_masyvas[10];
     for(int i = 0; i < 10; ++i)
     {
-        s_masyvas[i] = new Animal("s_animal " + to_string(i), 8, 9, 5, .5d*i);
+        s_masyvas[i] = new Animal{"s_animal_" + to_string(i), 8, 9, 5, .5d*i};
     }
 
 
     //dinaminis masyvas
-    cout << "Dinaminis masyvas" << '\n';
+    cout << "\n\nDinaminis masyvas" << '\n';
     Animal** d_masyvas = new Animal*[10];
     for(int i = 0; i < 10; ++i){
-        d_masyvas[i] = new Animal("d_animal " + to_string(i), 1);
+        d_masyvas[i] = new Animal{"d_animal_" + to_string(i), 1};
     }
 
-    cout << "Yra Animal tipo objektų " << Animal::getQuantity()<< '\n';
+    cout << "\nYra " << Animal::getQuantity() << " Animal tipo objektų.\n";
 
+    cout << "\nIštrinamas statinio masyvo objektai:\n";
     for(int i = 0; i < sizeof(s_masyvas) / sizeof(s_masyvas[0]); ++i)
     {
         delete s_masyvas[i];
     }
-    cout << "Yra Animal tipo objektų " << Animal::getQuantity()<< '\n';
+    cout << "\nYra " << Animal::getQuantity() << " Animal tipo objektų.\n";
+
+    cout << "\nIštrinamas dinaminio masyvo objektai:\n";
     for(int i = 0; i < 10; ++i)
     {
         delete d_masyvas[i];
     }
     delete[] d_masyvas;
-    cout << "Yra Animal tipo objektų " << Animal::getQuantity()<< '\n';
+
+    cout << "\nYra " << Animal::getQuantity() << " Animal tipo objektų.\n";
+
+    Animal ozka{"Ožka", 9, -8, 4, .9};
+    ozka.move(-8, 9);
 
 
     return 0;
