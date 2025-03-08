@@ -13,11 +13,16 @@ gyvunas.exe
 ## Klasės struktūra
 ### Kintamieji
 ```cpp
+protected:
 const int ID
 int x, y
 double direction
 double speedMultiplier
 std::string name
+private:
+static int quantity
+static int nextID
+static constexpr int speed = 100
 ```
 ### Metodai
 ```cpp
