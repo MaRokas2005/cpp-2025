@@ -1,8 +1,15 @@
 .PHONY: main
 
-main: gyvunas.cpp
-	g++ -o gyvunas.exe gyvunas.cpp
-	./gyvunas.exe
+obj: main.cpp Animal.cpp
+	g++ -c main.cpp Animal.cpp
+
+exe: main.o Animal.o
+	g++ -o main.exe main.o Animal.o
+
+all:
+	obj exe
 
 clean:
-	rm -f gyvunas.exe
+	rm -f main.o
+
+rebuild: clean all

@@ -99,10 +99,12 @@ int main()
         s_masyvas[i] = new Animal{"s_animal_" + to_string(i), 8, 9, 5, .5d*i};
     }
 
+    Animal* p_d_masyvas[2]; // = new Animal[2]{Animal("animal1"), Animal("animal2")};
+
 
     //dinaminis masyvas
     cout << "\n\nDinaminis masyvas" << '\n';
-    Animal** d_masyvas = new Animal*[10];
+    Animal* d_masyvas[10];
     for(int i = 0; i < 10; ++i){
         d_masyvas[i] = new Animal{"d_animal_" + to_string(i), 1};
     }
