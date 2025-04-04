@@ -1,5 +1,6 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 #include "Animal.h"
+#include "AnimalException.h"
 
 using namespace std;
 
@@ -19,9 +20,6 @@ int main()
         meska.print();
         meska.move(10, -20);
         logFile << "Meška pajudėjo." << std::endl;
-
-        auto vilkas = std::make_unique<Animal>("Vilkas", 9, 8, 270, 0.7);
-        vilkas->print();
 
         throw AnimalException("Testuojama AnimalException išimtis");
     } catch (const AnimalException& e) {

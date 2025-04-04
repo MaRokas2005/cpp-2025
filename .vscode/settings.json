@@ -38,6 +38,7 @@
         "text_encoding": "cpp",
         "type_traits": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "scoped_allocator": "cpp"
     }
 }

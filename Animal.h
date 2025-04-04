@@ -3,12 +3,12 @@
 
 #include <memory>
 #include <string>
-#include <exception>
-
-class AnimalImpl;
+#include "AnimalImpl.h"
 
 class Animal
 {
+private:
+    AnimalImpl *pImpl;
 public:
     Animal(const std::string& name, int x = 0, int y = 0, double direction = 0.0, double speedMultiplier = 1.0);
     Animal(const Animal& other);
@@ -27,16 +27,6 @@ public:
     std::string getName() const;
     static int getQuantity();
 
-private:
-    std::unique_ptr<AnimalImpl> pImpl;
-};
-
-class AnimalException : public std::exception {
-private:
-    std::string message;
-public:
-    explicit AnimalException(const std::string& msg);
-    const char* what() const noexcept override;
 };
 
 #endif

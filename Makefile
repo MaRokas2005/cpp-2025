@@ -1,15 +1,22 @@
-.PHONY: main
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra
 
-obj: main.cpp Animal.cpp
-	g++ -c main.cpp Animal.cpp
+SRCS = main.cpp Animal.cpp AnimalImpl.cpp AnimalException.cpp
+OBJS = main.o Animal.o AnimalImpl.o AnimalException.o
+EXE = main.exe
+TXT = test_results.txt
 
-exe: main.o Animal.o
-	g++ -o main.exe main.o Animal.o
+.PHONY: all clean rebuild
+all: $(EXE)
 
-all:
-	obj exe
+$(EXE): $(OBJS)
+	$(CXX) -o $@ $^
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f main.o
+	rm *.o *.exe *.txt
+	@echo "Cleaned up object files and executable."
 
 rebuild: clean all
