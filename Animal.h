@@ -3,8 +3,7 @@
 
 #include <memory>
 #include <string>
-#include "AnimalImpl.h"
-
+class AnimalImpl;
 class Animal
 {
 private:
