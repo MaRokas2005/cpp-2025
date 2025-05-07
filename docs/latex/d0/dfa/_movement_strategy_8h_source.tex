@@ -1,0 +1,27 @@
+\doxysection{Movement\+Strategy.\+h}
+\hypertarget{_movement_strategy_8h_source}{}\label{_movement_strategy_8h_source}\index{src/movement/MovementStrategy.h@{src/movement/MovementStrategy.h}}
+\mbox{\hyperlink{_movement_strategy_8h}{Eiti į šio failo dokumentaciją.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ MOVEMENTSTRATEGY\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ MOVEMENTSTRATEGY\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <istream>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <ostream>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_movement_strategy}{MovementStrategy}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_movement_strategy_a586a172c490dd0f890717c7453288d26}{\string~MovementStrategy}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d}{move}}(\textcolor{keywordtype}{int}\&\ x,\ \textcolor{keywordtype}{int}\&\ y,\ \textcolor{keywordtype}{int}\ dx,\ \textcolor{keywordtype}{int}\ dy)\ =\ 0;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_movement_strategy_a7be3f7090cfb46422770e1537de43e91}{serialize}}(std::ostream\&\ os)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_movement_strategy_a1ecfc44b0a8650c7f1bbd3f5bc9942a1}{deserialize}}(std::istream\&\ is)\ =\ 0;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0}{typeTag}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MOVEMENTSTRATEGY\_H}}
+
+\end{DoxyCode}

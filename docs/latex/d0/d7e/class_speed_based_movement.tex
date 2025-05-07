@@ -1,0 +1,150 @@
+\doxysection{Speed\+Based\+Movement Klasė}
+\hypertarget{class_speed_based_movement}{}\label{class_speed_based_movement}\index{SpeedBasedMovement@{SpeedBasedMovement}}
+
+
+Base class for strategies that share a speed\+Multiplier.  
+
+
+
+
+{\ttfamily \#include $<$Speed\+Based\+Movement.\+h$>$}
+
+
+
+Paveldimumo diagrama Speed\+Based\+Movement\+:
+% FIG 0
+
+
+Bendradarbiavimo diagrama Speed\+Based\+Movement\+:
+% FIG 1
+\doxysubsubsection*{Vieši Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390}{Speed\+Based\+Movement}} (double mult=1.\+0)
+\begin{DoxyCompactList}\small\item\em Construct a new Speed Based Movement object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683}{serialize}} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Serialize strategy-\/specific data to a binary stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb}{deserialize}} (std\+::istream \&is) override
+\begin{DoxyCompactList}\small\item\em Deserialize strategy-\/specific data from a binary stream. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_speed_based_movement_a9c8450f9dbdb0f14a18360d06bcaa617}{get\+Speed\+Multiplier}} () const
+\begin{DoxyCompactList}\small\item\em Get the speed multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_a85a8dc6775213040c0f0efab9a39dbdd}{set\+Speed\+Multiplier}} (double m)
+\begin{DoxyCompactList}\small\item\em Set the speed multiplier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Vieši Metodai inherited from \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_movement_strategy_a586a172c490dd0f890717c7453288d26}{\texorpdfstring{$\sim$}{\string~}\+Movement\+Strategy}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Movement Strategy object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d}{move}} (int \&x, int \&y, int dx, int dy)=0
+\begin{DoxyCompactList}\small\item\em Move the animal by (dx,dy), updating x,y in place. \end{DoxyCompactList}\item 
+virtual char \mbox{\hyperlink{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0}{type\+Tag}} () const =0
+\begin{DoxyCompactList}\small\item\em Return a tag to identify concrete type in the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Apsaugoti Atributai}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speed\+Multiplier\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Smulkus aprašymas}
+Base class for strategies that share a speed\+Multiplier. 
+
+\doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\Hypertarget{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390}\index{SpeedBasedMovement@{SpeedBasedMovement}!SpeedBasedMovement@{SpeedBasedMovement}}
+\index{SpeedBasedMovement@{SpeedBasedMovement}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{SpeedBasedMovement()}{SpeedBasedMovement()}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390} 
+Speed\+Based\+Movement\+::\+Speed\+Based\+Movement (\begin{DoxyParamCaption}\item[{double}]{mult}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new Speed Based Movement object. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em mult} & speed multiplier, default = 1.\+0 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Metodų Dokumentacija}
+\Hypertarget{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb}\index{SpeedBasedMovement@{SpeedBasedMovement}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb} 
+void Speed\+Based\+Movement\+::deserialize (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Deserialize strategy-\/specific data from a binary stream. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em is} & input stream to read from \\
+\hline
+\end{DoxyParams}
+
+
+Realizuoja \mbox{\hyperlink{class_movement_strategy_a1ecfc44b0a8650c7f1bbd3f5bc9942a1}{Movement\+Strategy}}.
+
+\Hypertarget{class_speed_based_movement_a9c8450f9dbdb0f14a18360d06bcaa617}\index{SpeedBasedMovement@{SpeedBasedMovement}!getSpeedMultiplier@{getSpeedMultiplier}}
+\index{getSpeedMultiplier@{getSpeedMultiplier}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{getSpeedMultiplier()}{getSpeedMultiplier()}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_a9c8450f9dbdb0f14a18360d06bcaa617} 
+double Speed\+Based\+Movement\+::get\+Speed\+Multiplier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the speed multiplier. 
+
+\begin{DoxyReturn}{Gražina}
+double 
+\end{DoxyReturn}
+\Hypertarget{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683}\index{SpeedBasedMovement@{SpeedBasedMovement}!serialize@{serialize}}
+\index{serialize@{serialize}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683} 
+void Speed\+Based\+Movement\+::serialize (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Serialize strategy-\/specific data to a binary stream. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em os} & output stream to write to \\
+\hline
+\end{DoxyParams}
+
+
+Realizuoja \mbox{\hyperlink{class_movement_strategy_a7be3f7090cfb46422770e1537de43e91}{Movement\+Strategy}}.
+
+\Hypertarget{class_speed_based_movement_a85a8dc6775213040c0f0efab9a39dbdd}\index{SpeedBasedMovement@{SpeedBasedMovement}!setSpeedMultiplier@{setSpeedMultiplier}}
+\index{setSpeedMultiplier@{setSpeedMultiplier}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{setSpeedMultiplier()}{setSpeedMultiplier()}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_a85a8dc6775213040c0f0efab9a39dbdd} 
+void Speed\+Based\+Movement\+::set\+Speed\+Multiplier (\begin{DoxyParamCaption}\item[{double}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the speed multiplier. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Atributų Dokumentacija}
+\Hypertarget{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}\index{SpeedBasedMovement@{SpeedBasedMovement}!speedMultiplier\_@{speedMultiplier\_}}
+\index{speedMultiplier\_@{speedMultiplier\_}!SpeedBasedMovement@{SpeedBasedMovement}}
+\doxysubsubsection{\texorpdfstring{speedMultiplier\_}{speedMultiplier\_}}
+{\footnotesize\ttfamily \label{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8} 
+double Speed\+Based\+Movement\+::speed\+Multiplier\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Dokumentacija šiai klasei sugeneruota iš šio failo\+:\begin{DoxyCompactItemize}
+\item 
+src/movement/\mbox{\hyperlink{_speed_based_movement_8h}{Speed\+Based\+Movement.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,123 @@
+\doxysection{Diagonal\+Movement Klasė}
+\hypertarget{class_diagonal_movement}{}\label{class_diagonal_movement}\index{DiagonalMovement@{DiagonalMovement}}
+
+
+Allows diagonal moves at constant cost.  
+
+
+
+
+{\ttfamily \#include $<$Diagonal\+Movement.\+h$>$}
+
+
+
+Paveldimumo diagrama Diagonal\+Movement\+:
+% FIG 0
+
+
+Bendradarbiavimo diagrama Diagonal\+Movement\+:
+% FIG 1
+\doxysubsubsection*{Vieši Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_diagonal_movement_a6c78c7b0362c95fd2436850222f6d58a}{Diagonal\+Movement}} (double mult=1.\+0)
+\begin{DoxyCompactList}\small\item\em Construct a new Diagonal Movement object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_diagonal_movement_a4bded2ecb7876398e25272a31b7fa782}{move}} (int \&x, int \&y, int dx, int dy) override
+\begin{DoxyCompactList}\small\item\em Move the animal by (dx,dy), updating x,y in place. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_diagonal_movement_af03273fa0248ef26f0c1096e973388f2}{type\+Tag}} () const override
+\begin{DoxyCompactList}\small\item\em Return a tag to identify concrete type in the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Vieši Metodai inherited from \mbox{\hyperlink{class_speed_based_movement}{Speed\+Based\+Movement}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390}{Speed\+Based\+Movement}} (double mult=1.\+0)
+\begin{DoxyCompactList}\small\item\em Construct a new Speed Based Movement object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683}{serialize}} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Serialize strategy-\/specific data to a binary stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb}{deserialize}} (std\+::istream \&is) override
+\begin{DoxyCompactList}\small\item\em Deserialize strategy-\/specific data from a binary stream. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_speed_based_movement_a9c8450f9dbdb0f14a18360d06bcaa617}{get\+Speed\+Multiplier}} () const
+\begin{DoxyCompactList}\small\item\em Get the speed multiplier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_speed_based_movement_a85a8dc6775213040c0f0efab9a39dbdd}{set\+Speed\+Multiplier}} (double m)
+\begin{DoxyCompactList}\small\item\em Set the speed multiplier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Vieši Metodai inherited from \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_movement_strategy_a586a172c490dd0f890717c7453288d26}{\texorpdfstring{$\sim$}{\string~}\+Movement\+Strategy}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Movement Strategy object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Apsaugoti Atributai inherited from \mbox{\hyperlink{class_speed_based_movement}{Speed\+Based\+Movement}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speed\+Multiplier\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Smulkus aprašymas}
+Allows diagonal moves at constant cost. 
+
+\doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\Hypertarget{class_diagonal_movement_a6c78c7b0362c95fd2436850222f6d58a}\index{DiagonalMovement@{DiagonalMovement}!DiagonalMovement@{DiagonalMovement}}
+\index{DiagonalMovement@{DiagonalMovement}!DiagonalMovement@{DiagonalMovement}}
+\doxysubsubsection{\texorpdfstring{DiagonalMovement()}{DiagonalMovement()}}
+{\footnotesize\ttfamily \label{class_diagonal_movement_a6c78c7b0362c95fd2436850222f6d58a} 
+Diagonal\+Movement\+::\+Diagonal\+Movement (\begin{DoxyParamCaption}\item[{double}]{mult}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Construct a new Diagonal Movement object. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em mult} & initial speed multiplier, default = 1.\+0 \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Metodų Dokumentacija}
+\Hypertarget{class_diagonal_movement_a4bded2ecb7876398e25272a31b7fa782}\index{DiagonalMovement@{DiagonalMovement}!move@{move}}
+\index{move@{move}!DiagonalMovement@{DiagonalMovement}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_diagonal_movement_a4bded2ecb7876398e25272a31b7fa782} 
+void Diagonal\+Movement\+::move (\begin{DoxyParamCaption}\item[{int \&}]{x}{, }\item[{int \&}]{y}{, }\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Move the animal by (dx,dy), updating x,y in place. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em x} & int\& x coordinate of the animal \\
+\hline
+{\em y} & int\& y coordinate of the animal \\
+\hline
+{\em dx} & int x displacement \\
+\hline
+{\em dy} & int y displacement \\
+\hline
+\end{DoxyParams}
+
+
+Realizuoja \mbox{\hyperlink{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d}{Movement\+Strategy}}.
+
+\Hypertarget{class_diagonal_movement_af03273fa0248ef26f0c1096e973388f2}\index{DiagonalMovement@{DiagonalMovement}!typeTag@{typeTag}}
+\index{typeTag@{typeTag}!DiagonalMovement@{DiagonalMovement}}
+\doxysubsubsection{\texorpdfstring{typeTag()}{typeTag()}}
+{\footnotesize\ttfamily \label{class_diagonal_movement_af03273fa0248ef26f0c1096e973388f2} 
+char Diagonal\+Movement\+::type\+Tag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return a tag to identify concrete type in the stream. 
+
+\begin{DoxyReturn}{Gražina}
+char 
+\end{DoxyReturn}
+
+
+Realizuoja \mbox{\hyperlink{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0}{Movement\+Strategy}}.
+
+
+
+Dokumentacija šiai klasei sugeneruota iš šio failo\+:\begin{DoxyCompactItemize}
+\item 
+src/movement/\mbox{\hyperlink{_diagonal_movement_8h}{Diagonal\+Movement.\+h}}\end{DoxyCompactItemize}

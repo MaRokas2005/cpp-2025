@@ -1,0 +1,132 @@
+\doxysection{Movement\+Strategy Klasė}
+\hypertarget{class_movement_strategy}{}\label{class_movement_strategy}\index{MovementStrategy@{MovementStrategy}}
+
+
+Abstract interface for animal movement behavior.  
+
+
+
+
+{\ttfamily \#include $<$Movement\+Strategy.\+h$>$}
+
+
+
+Paveldimumo diagrama Movement\+Strategy\+:
+% FIG 0
+\doxysubsubsection*{Vieši Metodai}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_movement_strategy_a586a172c490dd0f890717c7453288d26}{\texorpdfstring{$\sim$}{\string~}\+Movement\+Strategy}} ()=default
+\begin{DoxyCompactList}\small\item\em Destroy the Movement Strategy object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d}{move}} (int \&x, int \&y, int dx, int dy)=0
+\begin{DoxyCompactList}\small\item\em Move the animal by (dx,dy), updating x,y in place. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_movement_strategy_a7be3f7090cfb46422770e1537de43e91}{serialize}} (std\+::ostream \&os) const =0
+\begin{DoxyCompactList}\small\item\em Serialize strategy-\/specific data to a binary stream. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_movement_strategy_a1ecfc44b0a8650c7f1bbd3f5bc9942a1}{deserialize}} (std\+::istream \&is)=0
+\begin{DoxyCompactList}\small\item\em Deserialize strategy-\/specific data from a binary stream. \end{DoxyCompactList}\item 
+virtual char \mbox{\hyperlink{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0}{type\+Tag}} () const =0
+\begin{DoxyCompactList}\small\item\em Return a tag to identify concrete type in the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Smulkus aprašymas}
+Abstract interface for animal movement behavior. 
+
+\doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\Hypertarget{class_movement_strategy_a586a172c490dd0f890717c7453288d26}\index{MovementStrategy@{MovementStrategy}!````~MovementStrategy@{\texorpdfstring{$\sim$}{\string~}MovementStrategy}}
+\index{````~MovementStrategy@{\texorpdfstring{$\sim$}{\string~}MovementStrategy}!MovementStrategy@{MovementStrategy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MovementStrategy()}{\string~MovementStrategy()}}
+{\footnotesize\ttfamily \label{class_movement_strategy_a586a172c490dd0f890717c7453288d26} 
+virtual Movement\+Strategy\+::\texorpdfstring{$\sim$}{\string~}\+Movement\+Strategy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destroy the Movement Strategy object. 
+
+
+
+\doxysubsection{Metodų Dokumentacija}
+\Hypertarget{class_movement_strategy_a1ecfc44b0a8650c7f1bbd3f5bc9942a1}\index{MovementStrategy@{MovementStrategy}!deserialize@{deserialize}}
+\index{deserialize@{deserialize}!MovementStrategy@{MovementStrategy}}
+\doxysubsubsection{\texorpdfstring{deserialize()}{deserialize()}}
+{\footnotesize\ttfamily \label{class_movement_strategy_a1ecfc44b0a8650c7f1bbd3f5bc9942a1} 
+virtual void Movement\+Strategy\+::deserialize (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Deserialize strategy-\/specific data from a binary stream. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em is} & input stream to read from \\
+\hline
+\end{DoxyParams}
+
+
+Realizuota \mbox{\hyperlink{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb}{Speed\+Based\+Movement}}.
+
+\Hypertarget{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d}\index{MovementStrategy@{MovementStrategy}!move@{move}}
+\index{move@{move}!MovementStrategy@{MovementStrategy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_movement_strategy_aa347ab63ddd4ea0a4353486aeff7b82d} 
+virtual void Movement\+Strategy\+::move (\begin{DoxyParamCaption}\item[{int \&}]{x}{, }\item[{int \&}]{y}{, }\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Move the animal by (dx,dy), updating x,y in place. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em x} & int\& x coordinate of the animal \\
+\hline
+{\em y} & int\& y coordinate of the animal \\
+\hline
+{\em dx} & int x displacement \\
+\hline
+{\em dy} & int y displacement \\
+\hline
+\end{DoxyParams}
+
+
+Realizuota \mbox{\hyperlink{class_diagonal_movement_a4bded2ecb7876398e25272a31b7fa782}{Diagonal\+Movement}}, ir \mbox{\hyperlink{class_normal_movement_a8e6d632036391152e57d04a3d612681c}{Normal\+Movement}}.
+
+\Hypertarget{class_movement_strategy_a7be3f7090cfb46422770e1537de43e91}\index{MovementStrategy@{MovementStrategy}!serialize@{serialize}}
+\index{serialize@{serialize}!MovementStrategy@{MovementStrategy}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{class_movement_strategy_a7be3f7090cfb46422770e1537de43e91} 
+virtual void Movement\+Strategy\+::serialize (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Serialize strategy-\/specific data to a binary stream. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em os} & output stream to write to \\
+\hline
+\end{DoxyParams}
+
+
+Realizuota \mbox{\hyperlink{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683}{Speed\+Based\+Movement}}.
+
+\Hypertarget{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0}\index{MovementStrategy@{MovementStrategy}!typeTag@{typeTag}}
+\index{typeTag@{typeTag}!MovementStrategy@{MovementStrategy}}
+\doxysubsubsection{\texorpdfstring{typeTag()}{typeTag()}}
+{\footnotesize\ttfamily \label{class_movement_strategy_aaf6e7280b34384cb9d8ff1a7da94cac0} 
+virtual char Movement\+Strategy\+::type\+Tag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return a tag to identify concrete type in the stream. 
+
+\begin{DoxyReturn}{Gražina}
+char 
+\end{DoxyReturn}
+
+
+Realizuota \mbox{\hyperlink{class_diagonal_movement_af03273fa0248ef26f0c1096e973388f2}{Diagonal\+Movement}}, ir \mbox{\hyperlink{class_normal_movement_afeb3bf48c6e9a88b0f9325de12a22418}{Normal\+Movement}}.
+
+
+
+Dokumentacija šiai klasei sugeneruota iš šio failo\+:\begin{DoxyCompactItemize}
+\item 
+src/movement/\mbox{\hyperlink{_movement_strategy_8h}{Movement\+Strategy.\+h}}\end{DoxyCompactItemize}

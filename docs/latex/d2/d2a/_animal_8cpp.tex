@@ -1,0 +1,67 @@
+\doxysection{src/animal/\+Animal.cpp Failo Nuoroda}
+\hypertarget{_animal_8cpp}{}\label{_animal_8cpp}\index{src/animal/Animal.cpp@{src/animal/Animal.cpp}}
+{\ttfamily \#include "{}Animal.\+h"{}}\newline
+{\ttfamily \#include "{}../movement/\+Normal\+Movement.\+h"{}}\newline
+{\ttfamily \#include "{}../movement/\+Diagonal\+Movement.\+h"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Įtraukimo priklausomybių diagrama Animal.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Funkcijos}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_animal_8cpp_a1259a5b76ccf08278449d9d20ee5cbbf}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_animal}{Animal}} \&a)
+\item 
+std\+::istream \& \mbox{\hyperlink{_animal_8cpp_afca7b4429960159faa01e8d5f662e073}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{class_animal}{Animal}} \&a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Smulkus aprašymas}
+\begin{DoxyAuthor}{Autorius}
+Rokas Braidokas (\href{mailto:rokasbraidokas@gmail.com}{\texttt{ rokasbraidokas@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Versija}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Data}
+2025-\/05-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2025 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Funkcijos Dokumentacija}
+\Hypertarget{_animal_8cpp_a1259a5b76ccf08278449d9d20ee5cbbf}\index{Animal.cpp@{Animal.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Animal.cpp@{Animal.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{_animal_8cpp_a1259a5b76ccf08278449d9d20ee5cbbf} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_animal}{Animal}} \&}]{a}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametrai}
+{\em os} & output stream \\
+\hline
+{\em a} & animal to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Gražina}
+std\+::ostream\& 
+\end{DoxyReturn}
+\Hypertarget{_animal_8cpp_afca7b4429960159faa01e8d5f662e073}\index{Animal.cpp@{Animal.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Animal.cpp@{Animal.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily \label{_animal_8cpp_afca7b4429960159faa01e8d5f662e073} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{class_animal}{Animal}} \&}]{a}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parametrai}
+{\em is} & input stream \\
+\hline
+{\em a} & animal to read into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Gražina}
+std\+::istream\& 
+\end{DoxyReturn}

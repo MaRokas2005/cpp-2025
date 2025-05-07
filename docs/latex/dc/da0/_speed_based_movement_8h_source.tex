@@ -1,0 +1,35 @@
+\doxysection{Speed\+Based\+Movement.\+h}
+\hypertarget{_speed_based_movement_8h_source}{}\label{_speed_based_movement_8h_source}\index{src/movement/SpeedBasedMovement.h@{src/movement/SpeedBasedMovement.h}}
+\mbox{\hyperlink{_speed_based_movement_8h}{Eiti į šio failo dokumentaciją.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ SPEEDBASEDMOVEMENT\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ SPEEDBASEDMOVEMENT\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_movement_strategy_8h}{MovementStrategy.h}}"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390}{SpeedBasedMovement}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_movement_strategy}{MovementStrategy}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_speed_based_movement_affd1b1bc216f7679895ee335b77bb390}{SpeedBasedMovement}}(\textcolor{keywordtype}{double}\ mult\ =\ 1.0)}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}(mult)}
+\DoxyCodeLine{00032\ \ \ \ \ \{\}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speed_based_movement_ac1e33bf538e4a1814747cf99af2c4683}{serialize}}(std::ostream\&\ os)\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ os.write(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keyword}{const\ }\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(\&\mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}),\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}));}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speed_based_movement_aad4d9a3a3e4dc7d13613db86e3e79edb}{deserialize}}(std::istream\&\ is)\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ is.read(\textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{char}*\textcolor{keyword}{>}(\&\mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}),\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}));}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_speed_based_movement_a9c8450f9dbdb0f14a18360d06bcaa617}{getSpeedMultiplier}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}};\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_speed_based_movement_a85a8dc6775213040c0f0efab9a39dbdd}{setSpeedMultiplier}}(\textcolor{keywordtype}{double}\ m)\ \{\ \mbox{\hyperlink{class_speed_based_movement_a5655ac570a32bbb8781b2111c162e1d8}{speedMultiplier\_}}\ =\ m;\ \}}
+\DoxyCodeLine{00065\ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SPEEDBASEDMOVEMENT\_H}}
+
+\end{DoxyCode}

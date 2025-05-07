@@ -1,0 +1,219 @@
+\doxysection{Animal Klasė}
+\hypertarget{class_animal}{}\label{class_animal}\index{Animal@{Animal}}
+
+
+Represents an \doxylink{class_animal}{Animal} with pluggable movement.  
+
+
+
+
+{\ttfamily \#include $<$Animal.\+h$>$}
+
+\doxysubsubsection*{Vieši Metodai}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_animal_a87c4948172de4eafba2af89d9062f805}{Animal}} (const std\+::string \&name, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}} $>$ strat)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_animal}{Animal} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animal_a15558edb8b1f2981a7ce6636752c306f}{Animal}} (const \mbox{\hyperlink{class_animal}{Animal}} \&o)
+\begin{DoxyCompactList}\small\item\em Copy preserves runtime strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_animal}{Animal}} \& \mbox{\hyperlink{class_animal_ade765dc08638f8b980fd8d527cb1c12e}{operator=}} (const \mbox{\hyperlink{class_animal}{Animal}} \&o)
+\item 
+void \mbox{\hyperlink{class_animal_a8c9a776d7f5f32d70b92dc8f8770e0bb}{move}} (int dx, int dy)
+\begin{DoxyCompactList}\small\item\em Move by (dx,dy) via current strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_animal_a9c4335f982d5f76b93b8febf59c97f73}{set\+Movement\+Strategy}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}} $>$ strat)
+\begin{DoxyCompactList}\small\item\em Set the Movement Strategy object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animal_abf3c023166d43188c4b977b3b222fe75}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em get Identifier of the animal \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animal_ac9c89d3b72c064cdd2e466cffdfc60f2}{getX}} () const
+\begin{DoxyCompactList}\small\item\em get X coordinate of the animal \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_animal_a5f44a65ccc5c5486aae6e0fabc38834c}{getY}} () const
+\begin{DoxyCompactList}\small\item\em get Y coordinate of the animal \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_animal_a1b18a05b8aaecfccf98e96ba3f6b4fd3}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Draugai}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_animal_a1259a5b76ccf08278449d9d20ee5cbbf}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_animal}{Animal}} \&a)
+\begin{DoxyCompactList}\small\item\em Binary serialization (writes ID,x,y,name, then strategy tag+data). \end{DoxyCompactList}\item 
+std\+::istream \& \mbox{\hyperlink{class_animal_afca7b4429960159faa01e8d5f662e073}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{class_animal}{Animal}} \&a)
+\begin{DoxyCompactList}\small\item\em Binary deserialization (reads x,y,name, then strategy tag+data). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Smulkus aprašymas}
+Represents an \doxylink{class_animal}{Animal} with pluggable movement. 
+
+\doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
+\Hypertarget{class_animal_a87c4948172de4eafba2af89d9062f805}\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{Animal()}{Animal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_animal_a87c4948172de4eafba2af89d9062f805} 
+Animal\+::\+Animal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}} $>$}]{strat}{}\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{class_animal}{Animal} object. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em name} & animal name \\
+\hline
+{\em strat} & initial movement strategy (default = \doxylink{class_normal_movement}{Normal\+Movement}) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animal_a15558edb8b1f2981a7ce6636752c306f}\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{Animal()}{Animal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_animal_a15558edb8b1f2981a7ce6636752c306f} 
+Animal\+::\+Animal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_animal}{Animal}} \&}]{o}{}\end{DoxyParamCaption})}
+
+
+
+Copy preserves runtime strategy. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em o} & \doxylink{class_animal}{Animal} to copy from \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Metodų Dokumentacija}
+\Hypertarget{class_animal_abf3c023166d43188c4b977b3b222fe75}\index{Animal@{Animal}!getID@{getID}}
+\index{getID@{getID}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily \label{class_animal_abf3c023166d43188c4b977b3b222fe75} 
+int Animal\+::get\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+get Identifier of the animal 
+
+\begin{DoxyReturn}{Gražina}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_animal_a1b18a05b8aaecfccf98e96ba3f6b4fd3}\index{Animal@{Animal}!getName@{getName}}
+\index{getName@{getName}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_animal_a1b18a05b8aaecfccf98e96ba3f6b4fd3} 
+std\+::string Animal\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Gražina}
+std\+::string 
+\end{DoxyReturn}
+\Hypertarget{class_animal_ac9c89d3b72c064cdd2e466cffdfc60f2}\index{Animal@{Animal}!getX@{getX}}
+\index{getX@{getX}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily \label{class_animal_ac9c89d3b72c064cdd2e466cffdfc60f2} 
+int Animal\+::getX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+get X coordinate of the animal 
+
+\begin{DoxyReturn}{Gražina}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_animal_a5f44a65ccc5c5486aae6e0fabc38834c}\index{Animal@{Animal}!getY@{getY}}
+\index{getY@{getY}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily \label{class_animal_a5f44a65ccc5c5486aae6e0fabc38834c} 
+int Animal\+::getY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+get Y coordinate of the animal 
+
+\begin{DoxyReturn}{Gražina}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_animal_a8c9a776d7f5f32d70b92dc8f8770e0bb}\index{Animal@{Animal}!move@{move}}
+\index{move@{move}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_animal_a8c9a776d7f5f32d70b92dc8f8770e0bb} 
+void Animal\+::move (\begin{DoxyParamCaption}\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption})}
+
+
+
+Move by (dx,dy) via current strategy. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em dx} & delta x \\
+\hline
+{\em dy} & delta y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_animal_ade765dc08638f8b980fd8d527cb1c12e}\index{Animal@{Animal}!operator=@{operator=}}
+\index{operator=@{operator=}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_animal_ade765dc08638f8b980fd8d527cb1c12e} 
+\mbox{\hyperlink{class_animal}{Animal}} \& Animal\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_animal}{Animal}} \&}]{o}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_animal_a9c4335f982d5f76b93b8febf59c97f73}\index{Animal@{Animal}!setMovementStrategy@{setMovementStrategy}}
+\index{setMovementStrategy@{setMovementStrategy}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{setMovementStrategy()}{setMovementStrategy()}}
+{\footnotesize\ttfamily \label{class_animal_a9c4335f982d5f76b93b8febf59c97f73} 
+void Animal\+::set\+Movement\+Strategy (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}} $>$}]{strat}{}\end{DoxyParamCaption})}
+
+
+
+Set the Movement Strategy object. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em strat} & strategy to set \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Draugiškų Ir Susijusių Funkcijų Dokumentacija}
+\Hypertarget{class_animal_a1259a5b76ccf08278449d9d20ee5cbbf}\index{Animal@{Animal}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_animal_a1259a5b76ccf08278449d9d20ee5cbbf} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os}{, }\item[{const \mbox{\hyperlink{class_animal}{Animal}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Binary serialization (writes ID,x,y,name, then strategy tag+data). 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em os} & output stream \\
+\hline
+{\em a} & animal to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Gražina}
+std\+::ostream\& 
+\end{DoxyReturn}
+\Hypertarget{class_animal_afca7b4429960159faa01e8d5f662e073}\index{Animal@{Animal}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Animal@{Animal}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily \label{class_animal_afca7b4429960159faa01e8d5f662e073} 
+std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is}{, }\item[{\mbox{\hyperlink{class_animal}{Animal}} \&}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Binary deserialization (reads x,y,name, then strategy tag+data). 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em is} & input stream \\
+\hline
+{\em a} & animal to read into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Gražina}
+std\+::istream\& 
+\end{DoxyReturn}
+
+
+Dokumentacija šiai klasei sugeneruota iš šių failų\+:\begin{DoxyCompactItemize}
+\item 
+src/animal/\mbox{\hyperlink{_animal_8h}{Animal.\+h}}\item 
+src/animal/\mbox{\hyperlink{_animal_8cpp}{Animal.\+cpp}}\end{DoxyCompactItemize}

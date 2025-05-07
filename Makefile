@@ -1,22 +1,28 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra
 
-SRCS = main.cpp Animal.cpp AnimalImpl.cpp AnimalException.cpp
-OBJS = main.o Animal.o AnimalImpl.o AnimalException.o
+SRCS = ./src/main.cpp ./src/animal/Animal.cpp ./src/animal/exception/AnimalException.cpp
+OBJS = $(SRCS:./src/%.cpp=./build/%.o)
 EXE = main.exe
-TXT = test_results.txt
 
-.PHONY: all clean rebuild
+.PHONY: all clean rebuild docs
+
 all: $(EXE)
 
 $(EXE): $(OBJS)
-	$(CXX) -o $@ $^
+	@$(CXX) $(CXXFLAGS) -o $@ $^
 
-%.o: %.cpp
+./build/%.o: ./src/%.cpp
+	mkdir -p "$(dir $@)"
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+docs:
+	doxygen Doxyfile
+	cd latex && make
+	@echo "Documentation generated in the docs directory."
+
 clean:
-	rm *.o *.exe *.txt
-	@echo "Cleaned up object files and executable."
+	rm -rf ./build $(EXE) ./docs *.bin
+	@echo "Cleaned up build files and output."
 
 rebuild: clean all

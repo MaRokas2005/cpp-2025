@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ANIMAL: MovementStrategy Klasė</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ANIMAL
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Paieška" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/d4d/class_movement_strategy.html','../../'); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Vieši Metodai</a> &#124;
+<a href="../../d8/d07/class_movement_strategy-members.html">Visų narių sąrašas</a>  </div>
+  <div class="headertitle"><div class="title">MovementStrategy Klasė<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Abstract interface for animal movement behavior.  
+ <a href="#details">Daugiau...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/dfa/_movement_strategy_8h_source.html">MovementStrategy.h</a>&gt;</code></p>
+<div class="dynheader">
+Paveldimumo diagrama MovementStrategy:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d8a/class_movement_strategy__inherit__graph.png" border="0" usemap="#a_movement_strategy_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a target="top" href="../../graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Vieši Metodai</h2></td></tr>
+<tr class="memitem:a586a172c490dd0f890717c7453288d26" id="r_a586a172c490dd0f890717c7453288d26"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a586a172c490dd0f890717c7453288d26">~MovementStrategy</a> ()=default</td></tr>
+<tr class="memdesc:a586a172c490dd0f890717c7453288d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the Movement Strategy object.  <br /></td></tr>
+<tr class="separator:a586a172c490dd0f890717c7453288d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa347ab63ddd4ea0a4353486aeff7b82d" id="r_aa347ab63ddd4ea0a4353486aeff7b82d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa347ab63ddd4ea0a4353486aeff7b82d">move</a> (int &amp;x, int &amp;y, int dx, int dy)=0</td></tr>
+<tr class="memdesc:aa347ab63ddd4ea0a4353486aeff7b82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the animal by (dx,dy), updating x,y in place.  <br /></td></tr>
+<tr class="separator:aa347ab63ddd4ea0a4353486aeff7b82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be3f7090cfb46422770e1537de43e91" id="r_a7be3f7090cfb46422770e1537de43e91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7be3f7090cfb46422770e1537de43e91">serialize</a> (std::ostream &amp;os) const =0</td></tr>
+<tr class="memdesc:a7be3f7090cfb46422770e1537de43e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize strategy-specific data to a binary stream.  <br /></td></tr>
+<tr class="separator:a7be3f7090cfb46422770e1537de43e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecfc44b0a8650c7f1bbd3f5bc9942a1" id="r_a1ecfc44b0a8650c7f1bbd3f5bc9942a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ecfc44b0a8650c7f1bbd3f5bc9942a1">deserialize</a> (std::istream &amp;is)=0</td></tr>
+<tr class="memdesc:a1ecfc44b0a8650c7f1bbd3f5bc9942a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize strategy-specific data from a binary stream.  <br /></td></tr>
+<tr class="separator:a1ecfc44b0a8650c7f1bbd3f5bc9942a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6e7280b34384cb9d8ff1a7da94cac0" id="r_aaf6e7280b34384cb9d8ff1a7da94cac0"><td class="memItemLeft" align="right" valign="top">virtual char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf6e7280b34384cb9d8ff1a7da94cac0">typeTag</a> () const =0</td></tr>
+<tr class="memdesc:aaf6e7280b34384cb9d8ff1a7da94cac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a tag to identify concrete type in the stream.  <br /></td></tr>
+<tr class="separator:aaf6e7280b34384cb9d8ff1a7da94cac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Smulkus aprašymas</h2>
+<div class="textblock"><p>Abstract interface for animal movement behavior. </p>
+</div><h2 class="groupheader">Konstruktoriaus ir Destruktoriaus Dokumentacija</h2>
+<a id="a586a172c490dd0f890717c7453288d26" name="a586a172c490dd0f890717c7453288d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586a172c490dd0f890717c7453288d26">&#9670;&#160;</a></span>~MovementStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MovementStrategy::~MovementStrategy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroy the Movement Strategy object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Metodų Dokumentacija</h2>
+<a id="a1ecfc44b0a8650c7f1bbd3f5bc9942a1" name="a1ecfc44b0a8650c7f1bbd3f5bc9942a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecfc44b0a8650c7f1bbd3f5bc9942a1">&#9670;&#160;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MovementStrategy::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;</td>          <td class="paramname"><span class="paramname"><em>is</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserialize strategy-specific data from a binary stream. </p>
+<dl class="params"><dt>Parametrai</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>input stream to read from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Realizuota <a class="el" href="../../d0/d7e/class_speed_based_movement.html#aad4d9a3a3e4dc7d13613db86e3e79edb">SpeedBasedMovement</a>.</p>
+
+</div>
+</div>
+<a id="aa347ab63ddd4ea0a4353486aeff7b82d" name="aa347ab63ddd4ea0a4353486aeff7b82d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa347ab63ddd4ea0a4353486aeff7b82d">&#9670;&#160;</a></span>move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MovementStrategy::move </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;</td>          <td class="paramname"><span class="paramname"><em>y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move the animal by (dx,dy), updating x,y in place. </p>
+<dl class="params"><dt>Parametrai</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>int&amp; x coordinate of the animal </td></tr>
+    <tr><td class="paramname">y</td><td>int&amp; y coordinate of the animal </td></tr>
+    <tr><td class="paramname">dx</td><td>int x displacement </td></tr>
+    <tr><td class="paramname">dy</td><td>int y displacement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Realizuota <a class="el" href="../../dd/dcd/class_diagonal_movement.html#a4bded2ecb7876398e25272a31b7fa782">DiagonalMovement</a>, ir <a class="el" href="../../d7/d52/class_normal_movement.html#a8e6d632036391152e57d04a3d612681c">NormalMovement</a>.</p>
+
+</div>
+</div>
+<a id="a7be3f7090cfb46422770e1537de43e91" name="a7be3f7090cfb46422770e1537de43e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be3f7090cfb46422770e1537de43e91">&#9670;&#160;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MovementStrategy::serialize </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serialize strategy-specific data to a binary stream. </p>
+<dl class="params"><dt>Parametrai</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>output stream to write to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Realizuota <a class="el" href="../../d0/d7e/class_speed_based_movement.html#ac1e33bf538e4a1814747cf99af2c4683">SpeedBasedMovement</a>.</p>
+
+</div>
+</div>
+<a id="aaf6e7280b34384cb9d8ff1a7da94cac0" name="aaf6e7280b34384cb9d8ff1a7da94cac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6e7280b34384cb9d8ff1a7da94cac0">&#9670;&#160;</a></span>typeTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char MovementStrategy::typeTag </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a tag to identify concrete type in the stream. </p>
+<dl class="section return"><dt>Gražina</dt><dd>char </dd></dl>
+
+<p>Realizuota <a class="el" href="../../dd/dcd/class_diagonal_movement.html#af03273fa0248ef26f0c1096e973388f2">DiagonalMovement</a>, ir <a class="el" href="../../d7/d52/class_normal_movement.html#afeb3bf48c6e9a88b0f9325de12a22418">NormalMovement</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacija šiai klasei sugeneruota iš šio failo:<ul>
+<li>src/movement/<a class="el" href="../../d0/dfa/_movement_strategy_8h_source.html">MovementStrategy.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d3/d4d/class_movement_strategy.html">MovementStrategy</a></li>
+    <li class="footer">Sugeneruota <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
