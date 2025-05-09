@@ -5,9 +5,9 @@ Ištestuota objekto Animal įrašymas į failą ir nuskaitymas iš failo dvejeta
 
 ## Reikalavimai
 * *C++20*
-* *Doxygen* https://www.doxygen.nl/download.html
-* *TeXLive* https://tug.org/texlive/
-* *Graphviz* https://graphviz.gitlab.io/download/
+* *Doxygen* [https://www.doxygen.nl/download.html](https://www.doxygen.nl/download.html)
+* *TeXLive* [https://tug.org/texlive/](https://tug.org/texlive/)
+* *Graphviz* [https://graphviz.gitlab.io/download/](https://graphviz.gitlab.io/download/)
 * *Make*
 
 ## Darbas su Makefile
