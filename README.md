@@ -10,20 +10,22 @@ Ištestuota objekto Animal įrašymas į failą ir nuskaitymas iš failo dvejeta
 * *Graphviz* https://graphviz.gitlab.io/download/
 * *Make*
 
-## Paleidimas
+## Darbas su Makefile
+
+### Paleidimas
 ```bash
 make
 main.exe
 ```
-## Dokumentacijos generavimas
+### Dokumentacijos generavimas
 ```bash
 make docs
 ```
-## Išvalymas
+### Išvalymas
 ```bash
 make clean
 ```
-## Išvalymas ir paleidimas iš naujo
+### Išvalymas ir paleidimas iš naujo
 ```bash
 make rebuild
 main.exe
