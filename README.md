@@ -4,7 +4,11 @@
 Ištestuota objekto Animal įrašymas į failą ir nuskaitymas iš failo dvejetainiu formatu.
 
 ## Reikalavimai
-
+* *C++20*
+* *Doxygen* https://www.doxygen.nl/download.html
+* *TeXLive* https://tug.org/texlive/
+* *Graphviz* https://graphviz.gitlab.io/download/
+* *Make*
 
 ## Paleidimas
 ```bash
