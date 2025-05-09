@@ -1,5 +1,5 @@
 # Pasirinkau daryti klasę gyvūnas pirmai užduočiai
-### [Atidaryti README.md failą svetainės pavidalu](https://marokas2005.github.io/cpp-2025/)
+### [Atidaryti README.md failą svetainės pavidalu (Ypač esant ne github.com)](https://marokas2005.github.io/cpp-2025/)
 
 Ištestuota objekto Animal įrašymas į failą ir nuskaitymas iš failo dvejetainiu formatu.
 
