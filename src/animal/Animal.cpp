@@ -84,7 +84,7 @@ std::istream& operator>>(std::istream& is, Animal& a) {
     std::unique_ptr<MovementStrategy> strat;
     if (tag == 'N') strat = std::make_unique<NormalMovement>();
     else if (tag == 'D') strat = std::make_unique<DiagonalMovement>();
-    else throw std::runtime_error("Load: unknown strategy tag");
+    else throw AnimalException("Load: unknown strategy tag");
     strat->deserialize(is);
     a.mover_ = std::move(strat);
     return is;

@@ -18,7 +18,7 @@
 #include <iosfwd>
 
 /**
- * @brief Represents an Animal with pluggable movement.
+ * @brief Represents an Animal with replaceable movement.
  * 
  */
 class Animal {
@@ -44,6 +44,12 @@ public:
      * @param o Animal to copy from
      */
     Animal(const Animal& o);
+    /**
+     * @brief Copy assignment operator for the Animal class
+     * 
+     * @param o 
+     * @return Animal& 
+     */
     Animal& operator=(const Animal& o);
 
     /**
@@ -87,7 +93,7 @@ public:
     std::string getName() const;
 
     /**
-     * @brief Binary serialization (writes ID,x,y,name, then strategy tag+data).
+     * @brief Binary serialization (writes x, y, name, then strategy tag + data).
      * 
      * @param os output stream
      * @param a animal to write
@@ -95,7 +101,7 @@ public:
      */
     friend std::ostream& operator<<(std::ostream& os, const Animal& a);
     /**
-     * @brief Binary deserialization (reads x,y,name, then strategy tag+data).
+     * @brief Binary deserialization (reads x, y, name, then strategy tag + data).
      * 
      * @param is input stream
      * @param a animal to read into

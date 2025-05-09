@@ -110,7 +110,7 @@ $(function(){initNavTree('d0/d24/class_animal.html','../../'); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
-<p>Represents an <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with pluggable movement.">Animal</a> with pluggable movement.  
+<p>Represents an <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> with replaceable movement.  
  <a href="#details">Daugiau...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d0/d4e/_animal_8h_source.html">Animal.h</a>&gt;</code></p>
@@ -118,12 +118,13 @@ $(function(){initNavTree('d0/d24/class_animal.html','../../'); initResizable(tru
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Vieši Metodai</h2></td></tr>
 <tr class="memitem:a87c4948172de4eafba2af89d9062f805" id="r_a87c4948172de4eafba2af89d9062f805"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c4948172de4eafba2af89d9062f805">Animal</a> (const std::string &amp;name, std::unique_ptr&lt; <a class="el" href="../../d3/d4d/class_movement_strategy.html">MovementStrategy</a> &gt; strat)</td></tr>
-<tr class="memdesc:a87c4948172de4eafba2af89d9062f805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with pluggable movement.">Animal</a> object.  <br /></td></tr>
+<tr class="memdesc:a87c4948172de4eafba2af89d9062f805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> object.  <br /></td></tr>
 <tr class="separator:a87c4948172de4eafba2af89d9062f805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15558edb8b1f2981a7ce6636752c306f" id="r_a15558edb8b1f2981a7ce6636752c306f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15558edb8b1f2981a7ce6636752c306f">Animal</a> (const <a class="el" href="../../d0/d24/class_animal.html">Animal</a> &amp;o)</td></tr>
 <tr class="memdesc:a15558edb8b1f2981a7ce6636752c306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy preserves runtime strategy.  <br /></td></tr>
 <tr class="separator:a15558edb8b1f2981a7ce6636752c306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade765dc08638f8b980fd8d527cb1c12e" id="r_ade765dc08638f8b980fd8d527cb1c12e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d24/class_animal.html">Animal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade765dc08638f8b980fd8d527cb1c12e">operator=</a> (const <a class="el" href="../../d0/d24/class_animal.html">Animal</a> &amp;o)</td></tr>
+<tr class="memdesc:ade765dc08638f8b980fd8d527cb1c12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment operator for the <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> class.  <br /></td></tr>
 <tr class="separator:ade765dc08638f8b980fd8d527cb1c12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9a776d7f5f32d70b92dc8f8770e0bb" id="r_a8c9a776d7f5f32d70b92dc8f8770e0bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c9a776d7f5f32d70b92dc8f8770e0bb">move</a> (int dx, int dy)</td></tr>
 <tr class="memdesc:a8c9a776d7f5f32d70b92dc8f8770e0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move by (dx,dy) via current strategy.  <br /></td></tr>
@@ -147,14 +148,14 @@ Vieši Metodai</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Draugai</h2></td></tr>
 <tr class="memitem:a1259a5b76ccf08278449d9d20ee5cbbf" id="r_a1259a5b76ccf08278449d9d20ee5cbbf"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1259a5b76ccf08278449d9d20ee5cbbf">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d0/d24/class_animal.html">Animal</a> &amp;a)</td></tr>
-<tr class="memdesc:a1259a5b76ccf08278449d9d20ee5cbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary serialization (writes ID,x,y,name, then strategy tag+data).  <br /></td></tr>
+<tr class="memdesc:a1259a5b76ccf08278449d9d20ee5cbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary serialization (writes x, y, name, then strategy tag + data).  <br /></td></tr>
 <tr class="separator:a1259a5b76ccf08278449d9d20ee5cbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca7b4429960159faa01e8d5f662e073" id="r_afca7b4429960159faa01e8d5f662e073"><td class="memItemLeft" align="right" valign="top">std::istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afca7b4429960159faa01e8d5f662e073">operator&gt;&gt;</a> (std::istream &amp;is, <a class="el" href="../../d0/d24/class_animal.html">Animal</a> &amp;a)</td></tr>
-<tr class="memdesc:afca7b4429960159faa01e8d5f662e073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary deserialization (reads x,y,name, then strategy tag+data).  <br /></td></tr>
+<tr class="memdesc:afca7b4429960159faa01e8d5f662e073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary deserialization (reads x, y, name, then strategy tag + data).  <br /></td></tr>
 <tr class="separator:afca7b4429960159faa01e8d5f662e073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Smulkus aprašymas</h2>
-<div class="textblock"><p>Represents an <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with pluggable movement.">Animal</a> with pluggable movement. </p>
+<div class="textblock"><p>Represents an <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> with replaceable movement. </p>
 </div><h2 class="groupheader">Konstruktoriaus ir Destruktoriaus Dokumentacija</h2>
 <a id="a87c4948172de4eafba2af89d9062f805" name="a87c4948172de4eafba2af89d9062f805"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87c4948172de4eafba2af89d9062f805">&#9670;&#160;</a></span>Animal() <span class="overload">[1/2]</span></h2>
@@ -175,7 +176,7 @@ Draugai</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with pluggable movement.">Animal</a> object. </p>
+<p>Construct a new <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> object. </p>
 <dl class="params"><dt>Parametrai</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>animal name </td></tr>
@@ -204,7 +205,7 @@ Draugai</h2></td></tr>
 <p>Copy preserves runtime strategy. </p>
 <dl class="params"><dt>Parametrai</dt><dd>
   <table class="params">
-    <tr><td class="paramname">o</td><td><a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with pluggable movement.">Animal</a> to copy from </td></tr>
+    <tr><td class="paramname">o</td><td><a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> to copy from </td></tr>
   </table>
   </dd>
 </dl>
@@ -337,6 +338,15 @@ Draugai</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Copy assignment operator for the <a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a> class. </p>
+<dl class="params"><dt>Parametrai</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Gražina</dt><dd><a class="el" href="../../d0/d24/class_animal.html" title="Represents an Animal with replaceable movement.">Animal</a>&amp; </dd></dl>
+
 </div>
 </div>
 <a id="a9c4335f982d5f76b93b8febf59c97f73" name="a9c4335f982d5f76b93b8febf59c97f73"></a>
@@ -392,7 +402,7 @@ Draugai</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binary serialization (writes ID,x,y,name, then strategy tag+data). </p>
+<p>Binary serialization (writes x, y, name, then strategy tag + data). </p>
 <dl class="params"><dt>Parametrai</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>output stream </td></tr>
@@ -431,7 +441,7 @@ Draugai</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binary deserialization (reads x,y,name, then strategy tag+data). </p>
+<p>Binary deserialization (reads x, y, name, then strategy tag + data). </p>
 <dl class="params"><dt>Parametrai</dt><dd>
   <table class="params">
     <tr><td class="paramname">is</td><td>input stream </td></tr>

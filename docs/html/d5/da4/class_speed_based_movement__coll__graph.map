@@ -1,0 +1,5 @@
+<map id="SpeedBasedMovement" name="SpeedBasedMovement">
+<area shape="rect" id="Node000001" title="Base class for strategies that share a speedMultiplier." alt="" coords="5,80,162,107"/>
+<area shape="rect" id="Node000002" href="$d3/d4d/class_movement_strategy.html" title="Abstract interface for animal movement behavior." alt="" coords="18,5,149,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,48,86,80,81,80,81,48"/>
+</map>

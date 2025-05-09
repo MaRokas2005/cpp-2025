@@ -2,3 +2,4 @@
 *.o
 *.txt
 gyvunas.cpp
+\build

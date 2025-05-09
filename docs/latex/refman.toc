@@ -1,0 +1,95 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {lithuanian}{}\relax 
+\contentsline {chapter}{\numberline {1}Hierarchijos Indeksas}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Klasių hierarchija}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Klasės Indeksas}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Klasės}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Failo Indeksas}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Failai}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Klasės Dokumentacija}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Animal Klasė}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Smulkus aprašymas}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Konstruktoriaus ir Destruktoriaus Dokumentacija}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Animal()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Animal()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Metodų Dokumentacija}{8}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}getID()}{8}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}getName()}{9}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}getX()}{9}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}getY()}{9}{subsubsection.4.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.1.3.5}move()}{9}{subsubsection.4.1.3.5}%
+\contentsline {subsubsection}{\numberline {4.1.3.6}operator=()}{9}{subsubsection.4.1.3.6}%
+\contentsline {subsubsection}{\numberline {4.1.3.7}setMovementStrategy()}{10}{subsubsection.4.1.3.7}%
+\contentsline {subsection}{\numberline {4.1.4}Draugiškų Ir Susijusių Funkcijų Dokumentacija}{10}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}operator$<$$<$}{10}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}operator$>$$>$}{10}{subsubsection.4.1.4.2}%
+\contentsline {section}{\numberline {4.2}Animal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Klasė}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Konstruktoriaus ir Destruktoriaus Dokumentacija}{12}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}AnimalException()}{12}{subsubsection.4.2.1.1}%
+\contentsline {subsection}{\numberline {4.2.2}Metodų Dokumentacija}{12}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}what()}{12}{subsubsection.4.2.2.1}%
+\contentsline {section}{\numberline {4.3}Diagonal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement Klasė}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Smulkus aprašymas}{14}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Konstruktoriaus ir Destruktoriaus Dokumentacija}{14}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}DiagonalMovement()}{14}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Metodų Dokumentacija}{14}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}move()}{14}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}typeTag()}{15}{subsubsection.4.3.3.2}%
+\contentsline {section}{\numberline {4.4}Movement\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Strategy Klasė}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Smulkus aprašymas}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Konstruktoriaus ir Destruktoriaus Dokumentacija}{16}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}$\sim $MovementStrategy()}{16}{subsubsection.4.4.2.1}%
+\contentsline {subsection}{\numberline {4.4.3}Metodų Dokumentacija}{16}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}deserialize()}{16}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}move()}{16}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}serialize()}{17}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}typeTag()}{17}{subsubsection.4.4.3.4}%
+\contentsline {section}{\numberline {4.5}Normal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement Klasė}{18}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Smulkus aprašymas}{19}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Konstruktoriaus ir Destruktoriaus Dokumentacija}{19}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}NormalMovement()}{19}{subsubsection.4.5.2.1}%
+\contentsline {subsection}{\numberline {4.5.3}Metodų Dokumentacija}{19}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}move()}{19}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}typeTag()}{20}{subsubsection.4.5.3.2}%
+\contentsline {section}{\numberline {4.6}Speed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Based\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement Klasė}{20}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Smulkus aprašymas}{21}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Konstruktoriaus ir Destruktoriaus Dokumentacija}{21}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}SpeedBasedMovement()}{21}{subsubsection.4.6.2.1}%
+\contentsline {subsection}{\numberline {4.6.3}Metodų Dokumentacija}{22}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}deserialize()}{22}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}getSpeedMultiplier()}{22}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}serialize()}{22}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}setSpeedMultiplier()}{22}{subsubsection.4.6.3.4}%
+\contentsline {subsection}{\numberline {4.6.4}Atributų Dokumentacija}{23}{subsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.4.1}speedMultiplier\_}{23}{subsubsection.4.6.4.1}%
+\contentsline {chapter}{\numberline {5}Failo Dokumentacija}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}src/animal/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Animal.cpp Failo Nuoroda}{25}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Smulkus aprašymas}{25}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Funkcijos Dokumentacija}{26}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}operator$<$$<$()}{26}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}operator$>$$>$()}{26}{subsubsection.5.1.2.2}%
+\contentsline {section}{\numberline {5.2}src/animal/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Animal.h Failo Nuoroda}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Smulkus aprašymas}{27}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}Animal.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4}src/animal/exception/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Animal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.cpp Failo Nuoroda}{28}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Smulkus aprašymas}{29}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}src/animal/exception/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Animal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.h Failo Nuoroda}{29}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Smulkus aprašymas}{30}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Animal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.5.6}%
+\contentsline {section}{\numberline {5.7}src/main.cpp Failo Nuoroda}{31}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Smulkus aprašymas}{32}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Funkcijos Dokumentacija}{32}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}main()}{32}{subsubsection.5.7.2.1}%
+\contentsline {section}{\numberline {5.8}src/movement/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Diagonal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.h Failo Nuoroda}{32}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Smulkus aprašymas}{33}{subsection.5.8.1}%
+\contentsline {section}{\numberline {5.9}Diagonal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{33}{section.5.9}%
+\contentsline {section}{\numberline {5.10}src/movement/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Strategy.h Failo Nuoroda}{34}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Smulkus aprašymas}{35}{subsection.5.10.1}%
+\contentsline {section}{\numberline {5.11}Movement\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Strategy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{35}{section.5.11}%
+\contentsline {section}{\numberline {5.12}src/movement/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Normal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.h Failo Nuoroda}{36}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Smulkus aprašymas}{37}{subsection.5.12.1}%
+\contentsline {section}{\numberline {5.13}Normal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.5.13}%
+\contentsline {section}{\numberline {5.14}src/movement/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Speed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Based\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.h Failo Nuoroda}{38}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Smulkus aprašymas}{38}{subsection.5.14.1}%
+\contentsline {section}{\numberline {5.15}Speed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Based\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Movement.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{section.5.15}%
+\contentsline {chapter}{Rodykl\.e}{41}{section*.50}%

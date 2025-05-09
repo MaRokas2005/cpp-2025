@@ -1,10 +1,22 @@
-// File: NormalMovement.h
+/**
+ * @file NormalMovement.h
+ * @author Rokas Braidokas (rokasbraidokas@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2025-05-09
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
 #ifndef NORMALMOVEMENT_H
 #define NORMALMOVEMENT_H
 
 #include "SpeedBasedMovement.h"
 
-/// @brief Simple axis-aligned movement.
+/**
+ * @brief Simple axis-aligned movement.
+ * 
+ */
 class NormalMovement : public SpeedBasedMovement {
 public:
     /**

@@ -17,12 +17,15 @@ $(EXE): $(OBJS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 docs:
-	doxygen Doxyfile
-	cd latex && make
+	@doxygen Doxyfile
+	@cd "docs/latex" && make
+	@echo "Running in: $$(pwd)"
+	@cp "docs\latex\refman.pdf" "documentation.pdf"
+
 	@echo "Documentation generated in the docs directory."
 
 clean:
-	rm -rf ./build $(EXE) ./docs *.bin
+	rm -rf ./build $(EXE) ./docs *.bin documentation.pdf
 	@echo "Cleaned up build files and output."
 
 rebuild: clean all

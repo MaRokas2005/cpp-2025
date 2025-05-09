@@ -2,7 +2,7 @@
 \hypertarget{class_animal}{}\label{class_animal}\index{Animal@{Animal}}
 
 
-Represents an \doxylink{class_animal}{Animal} with pluggable movement.  
+Represents an \doxylink{class_animal}{Animal} with replaceable movement.  
 
 
 
@@ -17,7 +17,7 @@ Represents an \doxylink{class_animal}{Animal} with pluggable movement.
 \mbox{\hyperlink{class_animal_a15558edb8b1f2981a7ce6636752c306f}{Animal}} (const \mbox{\hyperlink{class_animal}{Animal}} \&o)
 \begin{DoxyCompactList}\small\item\em Copy preserves runtime strategy. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_animal}{Animal}} \& \mbox{\hyperlink{class_animal_ade765dc08638f8b980fd8d527cb1c12e}{operator=}} (const \mbox{\hyperlink{class_animal}{Animal}} \&o)
-\item 
+\begin{DoxyCompactList}\small\item\em Copy assignment operator for the \doxylink{class_animal}{Animal} class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_animal_a8c9a776d7f5f32d70b92dc8f8770e0bb}{move}} (int dx, int dy)
 \begin{DoxyCompactList}\small\item\em Move by (dx,dy) via current strategy. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_animal_a9c4335f982d5f76b93b8febf59c97f73}{set\+Movement\+Strategy}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_movement_strategy}{Movement\+Strategy}} $>$ strat)
@@ -34,13 +34,13 @@ std\+::string \mbox{\hyperlink{class_animal_a1b18a05b8aaecfccf98e96ba3f6b4fd3}{g
 \begin{DoxyCompactItemize}
 \item 
 std\+::ostream \& \mbox{\hyperlink{class_animal_a1259a5b76ccf08278449d9d20ee5cbbf}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_animal}{Animal}} \&a)
-\begin{DoxyCompactList}\small\item\em Binary serialization (writes ID,x,y,name, then strategy tag+data). \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Binary serialization (writes x, y, name, then strategy tag + data). \end{DoxyCompactList}\item 
 std\+::istream \& \mbox{\hyperlink{class_animal_afca7b4429960159faa01e8d5f662e073}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{class_animal}{Animal}} \&a)
-\begin{DoxyCompactList}\small\item\em Binary deserialization (reads x,y,name, then strategy tag+data). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Binary deserialization (reads x, y, name, then strategy tag + data). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Smulkus aprašymas}
-Represents an \doxylink{class_animal}{Animal} with pluggable movement. 
+Represents an \doxylink{class_animal}{Animal} with replaceable movement. 
 
 \doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
 \Hypertarget{class_animal_a87c4948172de4eafba2af89d9062f805}\index{Animal@{Animal}!Animal@{Animal}}
@@ -153,6 +153,18 @@ Move by (dx,dy) via current strategy.
 {\footnotesize\ttfamily \label{class_animal_ade765dc08638f8b980fd8d527cb1c12e} 
 \mbox{\hyperlink{class_animal}{Animal}} \& Animal\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_animal}{Animal}} \&}]{o}{}\end{DoxyParamCaption})}
 
+
+
+Copy assignment operator for the \doxylink{class_animal}{Animal} class. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em o} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Gražina}
+\doxylink{class_animal}{Animal}\& 
+\end{DoxyReturn}
 \Hypertarget{class_animal_a9c4335f982d5f76b93b8febf59c97f73}\index{Animal@{Animal}!setMovementStrategy@{setMovementStrategy}}
 \index{setMovementStrategy@{setMovementStrategy}!Animal@{Animal}}
 \doxysubsubsection{\texorpdfstring{setMovementStrategy()}{setMovementStrategy()}}
@@ -179,7 +191,7 @@ std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream 
 
 
 
-Binary serialization (writes ID,x,y,name, then strategy tag+data). 
+Binary serialization (writes x, y, name, then strategy tag + data). 
 
 
 \begin{DoxyParams}{Parametrai}
@@ -199,7 +211,7 @@ std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream 
 
 
 
-Binary deserialization (reads x,y,name, then strategy tag+data). 
+Binary deserialization (reads x, y, name, then strategy tag + data). 
 
 
 \begin{DoxyParams}{Parametrai}

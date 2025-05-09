@@ -1,0 +1,127 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}MovementStrategy}
+    \subitem {MovementStrategy}, \hyperpage{16}
+
+  \indexspace
+
+  \item {Animal}, \hyperpage{7}
+    \subitem {Animal}, \hyperpage{8}
+    \subitem {getID}, \hyperpage{8}
+    \subitem {getName}, \hyperpage{8}
+    \subitem {getX}, \hyperpage{9}
+    \subitem {getY}, \hyperpage{9}
+    \subitem {move}, \hyperpage{9}
+    \subitem {operator$<$$<$}, \hyperpage{10}
+    \subitem {operator$>$$>$}, \hyperpage{10}
+    \subitem {operator=}, \hyperpage{9}
+    \subitem {setMovementStrategy}, \hyperpage{10}
+  \item {Animal.cpp}
+    \subitem {operator$<$$<$}, \hyperpage{26}
+    \subitem {operator$>$$>$}, \hyperpage{26}
+  \item {AnimalException}, \hyperpage{11}
+    \subitem {AnimalException}, \hyperpage{12}
+    \subitem {what}, \hyperpage{12}
+
+  \indexspace
+
+  \item {deserialize}
+    \subitem {MovementStrategy}, \hyperpage{16}
+    \subitem {SpeedBasedMovement}, \hyperpage{22}
+  \item {DiagonalMovement}, \hyperpage{13}
+    \subitem {DiagonalMovement}, \hyperpage{14}
+    \subitem {move}, \hyperpage{14}
+    \subitem {typeTag}, \hyperpage{15}
+
+  \indexspace
+
+  \item {getID}
+    \subitem {Animal}, \hyperpage{8}
+  \item {getName}
+    \subitem {Animal}, \hyperpage{8}
+  \item {getSpeedMultiplier}
+    \subitem {SpeedBasedMovement}, \hyperpage{22}
+  \item {getX}
+    \subitem {Animal}, \hyperpage{9}
+  \item {getY}
+    \subitem {Animal}, \hyperpage{9}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{32}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{32}
+  \item {move}
+    \subitem {Animal}, \hyperpage{9}
+    \subitem {DiagonalMovement}, \hyperpage{14}
+    \subitem {MovementStrategy}, \hyperpage{16}
+    \subitem {NormalMovement}, \hyperpage{19}
+  \item {MovementStrategy}, \hyperpage{15}
+    \subitem {\texorpdfstring{$\sim$}{\string~}MovementStrategy}, 
+		\hyperpage{16}
+    \subitem {deserialize}, \hyperpage{16}
+    \subitem {move}, \hyperpage{16}
+    \subitem {serialize}, \hyperpage{17}
+    \subitem {typeTag}, \hyperpage{17}
+
+  \indexspace
+
+  \item {NormalMovement}, \hyperpage{18}
+    \subitem {move}, \hyperpage{19}
+    \subitem {NormalMovement}, \hyperpage{19}
+    \subitem {typeTag}, \hyperpage{20}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Animal}, \hyperpage{10}
+    \subitem {Animal.cpp}, \hyperpage{26}
+  \item {operator$>$$>$}
+    \subitem {Animal}, \hyperpage{10}
+    \subitem {Animal.cpp}, \hyperpage{26}
+  \item {operator=}
+    \subitem {Animal}, \hyperpage{9}
+
+  \indexspace
+
+  \item {serialize}
+    \subitem {MovementStrategy}, \hyperpage{17}
+    \subitem {SpeedBasedMovement}, \hyperpage{22}
+  \item {setMovementStrategy}
+    \subitem {Animal}, \hyperpage{10}
+  \item {setSpeedMultiplier}
+    \subitem {SpeedBasedMovement}, \hyperpage{22}
+  \item {SpeedBasedMovement}, \hyperpage{20}
+    \subitem {deserialize}, \hyperpage{22}
+    \subitem {getSpeedMultiplier}, \hyperpage{22}
+    \subitem {serialize}, \hyperpage{22}
+    \subitem {setSpeedMultiplier}, \hyperpage{22}
+    \subitem {SpeedBasedMovement}, \hyperpage{21}
+    \subitem {speedMultiplier\_}, \hyperpage{23}
+  \item {speedMultiplier\_}
+    \subitem {SpeedBasedMovement}, \hyperpage{23}
+  \item {src/animal/Animal.cpp}, \hyperpage{25}
+  \item {src/animal/Animal.h}, \hyperpage{27, 28}
+  \item {src/animal/exception/AnimalException.cpp}, \hyperpage{28}
+  \item {src/animal/exception/AnimalException.h}, \hyperpage{29}, 
+		\hyperpage{31}
+  \item {src/main.cpp}, \hyperpage{31}
+  \item {src/movement/DiagonalMovement.h}, \hyperpage{32, 33}
+  \item {src/movement/MovementStrategy.h}, \hyperpage{34, 35}
+  \item {src/movement/NormalMovement.h}, \hyperpage{36, 37}
+  \item {src/movement/SpeedBasedMovement.h}, \hyperpage{38, 39}
+
+  \indexspace
+
+  \item {typeTag}
+    \subitem {DiagonalMovement}, \hyperpage{15}
+    \subitem {MovementStrategy}, \hyperpage{17}
+    \subitem {NormalMovement}, \hyperpage{20}
+
+  \indexspace
+
+  \item {what}
+    \subitem {AnimalException}, \hyperpage{12}
+
+\end{theindex}

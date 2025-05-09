@@ -7,18 +7,30 @@
 
 
 Paveldimumo diagrama Animal\+Exception\+:
-% FIG 0
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{df/d8c/class_animal_exception__inherit__graph}
+\end{center}
+\end{figure}
 
 
 Bendradarbiavimo diagrama Animal\+Exception\+:
-% FIG 1
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{d5/d5f/class_animal_exception__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsubsection*{Vieši Metodai}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_animal_exception_a10e6184c1d97028db11389f93945d3f5}{Animal\+Exception}} (const std\+::string \&msg)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{class_animal}{Animal} Exception object. \end{DoxyCompactList}\item 
 const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_animal_exception_a9a47fdf2c7d3b4c7ae668d8d447c087d}{what}} () const noexcept override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em just a wrapper for std\+::exception\+::what() \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Konstruktoriaus ir Destruktoriaus Dokumentacija}
@@ -30,6 +42,15 @@ Animal\+Exception\+::\+Animal\+Exception (\begin{DoxyParamCaption}\item[{const s
 
 
 
+Construct a new \doxylink{class_animal}{Animal} Exception object. 
+
+
+\begin{DoxyParams}{Parametrai}
+{\em msg} & message to be displayed \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Metodų Dokumentacija}
 \Hypertarget{class_animal_exception_a9a47fdf2c7d3b4c7ae668d8d447c087d}\index{AnimalException@{AnimalException}!what@{what}}
 \index{what@{what}!AnimalException@{AnimalException}}
@@ -37,6 +58,13 @@ Animal\+Exception\+::\+Animal\+Exception (\begin{DoxyParamCaption}\item[{const s
 {\footnotesize\ttfamily \label{class_animal_exception_a9a47fdf2c7d3b4c7ae668d8d447c087d} 
 const char \texorpdfstring{$\ast$}{*} Animal\+Exception\+::what (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [noexcept]}}
 
+
+
+just a wrapper for std\+::exception\+::what() 
+
+\begin{DoxyReturn}{Gražina}
+const char\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
 
 
 Dokumentacija šiai klasei sugeneruota iš šių failų\+:\begin{DoxyCompactItemize}
