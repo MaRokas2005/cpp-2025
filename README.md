@@ -1,4 +1,6 @@
 # Pasirinkau daryti klasę gyvūnas pirmai užduočiai
+### [Nuoroda į repozitoriją](https://github.com/MaRokas2005/cpp-2025)
+### [Atidaryti README.md failą svetainės pavidalu](https://marokas2005.github.io/cpp-2025/)
 
 Ištestuota objekto Animal įrašymas į failą ir nuskaitymas iš failo dvejetainiu formatu.
 
@@ -21,8 +23,8 @@ make rebuild
 main.exe
 ```
 ## Dokumentacija
-### [PDF](documentation.pdf)
-[![View the full documentation (PDF)[docs]](docsPreview.png)](documentation.pdf)
-
 ### [Puslapis](docs\html\index.html)
 [![View the full documentation (HTML)[docs]](htmlPreview.png)](docs\html\index.html)
+
+### [PDF](documentation.pdf)
+[![View the full documentation (PDF)[docs]](docsPreview.png)](documentation.pdf)
